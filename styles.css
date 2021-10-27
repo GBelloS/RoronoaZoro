@@ -1,4 +1,169 @@
 body
 {
-    background-color: rgb(46, 85, 45);
+    background: rgb(46, 85, 45);
 }
+#zoro
+{
+    width: 525px;
+    height: 895px;
+    position: relative
+}
+#tronco
+{
+    background-color: rgb(209, 209, 209);
+    width: 370px;
+    height: 500px;
+    position: absolute;
+    margin: 390px 0 0 75px;
+    transform:
+        scaley(1.01)
+        translateY(23px)
+        perspective(500px)
+        rotatex(-10deg);
+    border-radius: 25px 25px 0 0;
+    outline: 2px solid
+}
+#ombroesq
+{
+    background-color: rgb(209, 209, 209);
+    width: 85px;
+    height: 115px;
+    position: absolute;
+    transform:
+        translatex(-100%)/*posicionamento*/
+        translate(2px,-2px)/*borda*/
+        
+        scaley(0.99)
+        perspective(500px)
+        rotatex(10deg)
+
+        rotate(-10deg)
+        translate(31px,10px);
+    border-radius: 80px 0 0;
+    border-width: 2px 0 0 2px;
+    border-style: solid
+}
+#ombrodir
+{
+    background-color: rgb(209, 209, 209);
+    width: 85px;
+    height: 115px;
+    position: absolute;
+        left: 100%;
+    transform:
+        translate(-2px,-2px)/*borda*/
+        
+        scaley(0.99)
+        perspective(500px)
+        rotatex(10deg)
+
+        rotate(10deg)
+        translate(-31px,10px);
+    border-radius: 0 80px 0 0;
+    border-width: 2px 2px 0 0;
+    border-style: solid
+}
+#bracoesq
+{
+    background-color: rgb(199, 171, 138);
+    width: 85px;
+    height: 115px;
+    position: absolute;
+        top: 100%;
+    outline: 2px solid
+}
+#bracodir
+{
+    background-color: rgb(199, 171, 138);
+    width: 85px;
+    height: 115px;
+    position: absolute;
+        top: 100%;
+        left: 100%;
+    transform: translatex(-100%);
+    outline: 2px solid
+}
+#antebracoesq
+{
+    width: 0px;
+    height: 60px;
+    position: absolute;
+        top: 100%;
+    transform: translatey(-1px);
+    border-left: 300px solid rgb(199, 171, 138);
+    border-bottom: 40px solid transparent;
+    border-radius: 0 0 0 60px / 0 0 0 45px
+}
+#antebracodir
+{
+    width: 0px;
+    height: 60px;
+    position: absolute;
+        top: 100%;
+        left: 100%;
+    transform: translate(-100%,-1px);
+    border-right: 300px solid rgb(199, 171, 138);
+    border-bottom: 40px solid transparent;
+    border-radius: 0 0 60px / 0 0 45px;
+}
+#pescoco
+{
+    background-color: rgb(199, 171, 138);
+    width: 125px;
+    height: 100px;
+    position: absolute;
+        left: 50%;
+    transform: 
+        translate(-50%,-100%)/*posicionamento*/
+        
+        scaley(0.99)
+        perspective(500px)
+        rotatex(10deg);
+}
+#cabeca
+{
+    background-color: rgb(199, 171, 138);
+    width: 150px;
+    height: 175px;
+    position: absolute;
+        left: 50%;
+    transform: translate(-50%,-70%);
+    transform-style: preserve-3d;
+    border-radius: 0 0 75px 75px / 0 0 120px 120px;
+    outline: 2px solid
+}
+#orelhaesq
+{
+    background-color: rgb(199, 171, 138);
+    width: 15px;
+    height: 50px;
+    position: absolute;
+    transform:
+        translate3d(-8px,80px,-1px)
+        rotate(-15deg);
+}
+#orelhadir
+{
+    background-color: rgb(199, 171, 138);
+    width: 15px;
+    height: 50px;
+    position: absolute;
+        left: 100%;
+    transform:
+        translatex(-100%)
+        translate3d(8px,80px,-1px)
+        rotate(15deg)
+}
+#cabelo
+{
+    background-color: rgb(67, 138, 61);
+    width: 220px;
+    height: 210px;
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%,-88px, -2px);
+    border-radius: 100px;
+}
+/* Link para referência:
+ * https://4.bp.blogspot.com/-CjM1NE1q-J8/VaFdwXB8thI/AAAAAAAAews/NEJ_kj4sEDo/s1600/Zoro%2Bcom%2Bas%2Bdores%2Be%2Bcansa%25C3%25A7o%2Bde%2BLuffy.png
+ */
